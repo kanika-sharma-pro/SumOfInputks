@@ -1,8 +1,10 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        import java.util.Scanner;
+
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         int number = getInputNumber();
@@ -20,7 +22,7 @@ public class Main {
         return sumOfNumbers(3) == 6; // 3 + 2 + 1 + 0 = 6
     }
 
-    static <Scanner> int getInputNumber() {
+    static int getInputNumber() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter any number: ");
         int num = scan.nextInt();
@@ -32,10 +34,6 @@ public class Main {
         return 0;
         }
 
-    long startTime = System.currentTimeMillis();
-    long endTime = System.currentTimeMillis();
-    long duration = (endTime - startTime);
-System.out.println("Execution time: " + duration + " milliseconds");
         }
 
 
